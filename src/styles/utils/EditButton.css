@@ -1,0 +1,10 @@
+.button-edit {
+    --light-background-color: #bcbdbf;
+    --edit-color: var(--background-color);
+
+    background-color: var(--edit-color);
+}
+
+.button-edit:hover {
+    background-color: var(--light-background-color);
+}

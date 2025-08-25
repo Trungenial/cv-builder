@@ -5,6 +5,7 @@
     border: 2px solid var(--background-color);
     box-shadow: 0 1px 2px var(--background-color);
     border-radius: 0.5rem;
+    transition: min-height 5s ease;
 }
 
 .head {
@@ -28,39 +29,17 @@ h2 {
 .button {
     display: flex;
     align-items: center;
+    min-width: 5rem;
     height: 1rem;
     padding: 1.3rem;
     background-color: var(--background-color);
     border-radius: 10rem;
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: background 0.5s ease;
     border: none;
     gap: 0.5rem;
     width: 10rem;
     overflow: hidden;
-}
-
-.button-edit {
-    --light-background-color: #bcbdbf;
-    --edit-color: var(--background-color);
-
-    background-color: var(--edit-color);
-}
-
-.button-edit:hover {
-    background-color: var(--light-background-color);
-}
-
-.button-save {
-    --save-color: rgba(0, 0, 255, 0.535);
-    --light-save-color: rgba(0, 0, 255, 0.85);
-
-    background-color: var(--save-color);
-    color: var(--background-color);
-}
-
-.button-save:hover {
-    background-color: var(--light-save-color);
 }
 
 .body {
@@ -68,4 +47,28 @@ h2 {
     flex-direction: column;
     gap: 2rem;
     padding-block: 3rem;
+    color: var(--light-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--background-color);
+    padding: 1rem;
+    border: 2px solid var(--background-color);
+    box-shadow: 0 1px 2px var(--background-color);
+    border-radius: 0.5rem;
+}
+
+input {
+    width: 30rem;
+    border: none;
+    font-size: 1rem;
+    padding: 0.2em;
+}
+
+input:focus {
+    /* border: none; */
+    outline: none;
 }
